@@ -2,12 +2,16 @@
   "name": "sails-dynamodb",
   "version": "0.0.1",
   "description": "DynamoDB adapter for Sails.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Adapter should be tested using Sails.js core.\" && exit 1"
+    "test": "node_modules/.bin/grunt ci"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/unvar/sails-dynamodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unvar/sails-dynamodb/issues"
   },
   "keywords": [
     "orm",
@@ -23,5 +27,16 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
+    "expect.js": "~0.2.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-mocha-cli": "~1.1.0",
+    "grunt-complexity": "~0.1.3",
+    "grunt-cli": "~0.1.9"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "~0.9.4",
+    "grunt-execute": "~0.1.5"
   }
 }

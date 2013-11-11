@@ -1,7 +1,9 @@
+'use strict';
+
 describe('registerCollection', function () {
 
 	it('should not hang or encounter any errors', function (cb) {
-		var adapter = require('../index.js');
+		var adapter = require('../../index.js');
 		adapter.registerCollection({
 			identity: 'foo'
 		}, cb);
